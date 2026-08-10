@@ -121,6 +121,8 @@ cat24 = [w, w, b, b, b, w, w, b, b, b, b, b, b, b, b, b, b, b, b, b, b, w, w, w,
 cat25 = [w, w, b, b, w, w, b, b, b, w, w, w, w, b, b, w, w, w, w, b, b, b, w, w, w]
 cat26 = [w, w, w, w, w, b, b, b, w, w, w, w, w, b, b, b, w, w, w, w, b, b, b, w, w]
 cat27 = [w, w, w, w, w, b, b, w, w, w, w, w, w, w, b, b, w, w, w, w, w, b, b, w, w]
+catall = [cat, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14, cat15, cat16,
+cat17, cat18, cat19, cat20, cat21, cat22, cat23, cat24, cat25, cat26, cat27]
 
 #dip pixels
 dip = [w, w, w, w, w, w, w, w, b, w, w, w, w, w, w, w, w]
@@ -157,6 +159,8 @@ t.pendown()
 
 #cat printing
 turtle.tracer(0,0)
+draw (0, 200, 8, catall)
+'''
 pixelsize = 8
 gotoy = 192
 for color in cat:
@@ -506,6 +510,7 @@ for color in cat27:
   t.end_fill()
   t.forward(pixelsize)
 t.penup()
+'''
 turtle.update()
 
 #dip printing
@@ -514,11 +519,13 @@ if enemy1 == "dip":
   draw(-375, 200, 12.5, dipall)
   
   
+  
   '''
   pixelsize = 12.5
   t.goto(-375, 200)
   gotoy = 187.5
   t.pendown()
+  
   for color in dip:
     t.color(color)
     t.begin_fill()
