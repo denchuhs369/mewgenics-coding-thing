@@ -56,6 +56,9 @@ e = "#ffcdd2"
 dd = "#5a423c"
 dl = "#96756c"
 d = "#74564e"
+r = "#dadada"
+rd = "#a7a5a5"
+re = "#e2d4d4"
 #fly pixels
 fly = [w, w, w, wo, w, w, w, w, w, w, w, w, w, w, wo, w, w, w]
 fly2 = [w, w, wo, wi, wo, w, w, w, w, w, w, w, w, wo, wi, wo, w, w]
@@ -148,6 +151,25 @@ dip20 = [w, w, w, b, b, b, b, b, b, b, b, b, b, b, w, w, w]
 dip21 = [w, w, w, w, w, b, b, b, b, b, b, b, w, w, w, w, w]
 dipall = [dip, dip2, dip3, dip4, dip5, dip6, dip7, dip8, dip9, dip10, dip11, dip12, dip13, dip14, dip15, 
 dip16, dip17, dip18, dip19, dip20, dip21]
+
+#rat pixels
+rat = [w, w, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat2 = [w, b, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat3 = [w, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat4 = [w, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat5 = [w, b, b, b, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat6 = [w, w, w, w, b, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w, w]
+rat7 = [w, w, w, w, b, w, w, w, w, w, w, w, w, b, b, w, w, w, w, w, w]
+rat8 = [w, w, b, b, b, w, w, w, w, w, w, w, b, re, re, b, w, w, w, w, w]
+rat9 = [w, w, b, w, w, w, w, w, w, w, w, w, b, re, re, b, w, w, w, w, w]
+rat10 = [w, b, b, b, b, b, b, b, b, b, w, w, b, re, re, b, w, w, w, w, w]
+rat11 = [b, r, r, r, r, r, r, r, r, r, b, b, b, re, re, b, w, w, w, w, w]
+rat12 = [b, r, r, r, r, r, r, r, r, r, r, r, b, re, re, b, b, w, w, w, w]
+rat13 = [b, r, r, r, r, r, r, r, r, r, r, r, b, re, re, b, r, b, w, w, w]
+rat14 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, w, w]
+rat15 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, b, r, b, w]
+rat16 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, b, r, r, b]
+rat16 = [b, r, r, r, b, b, b, b, , r, r, r, r, r, r, r, r, r, r, r, b]
 
 import turtle
 t = turtle.Turtle()
