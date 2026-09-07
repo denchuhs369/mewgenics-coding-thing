@@ -169,7 +169,14 @@ rat13 = [b, r, r, r, r, r, r, r, r, r, r, r, b, re, re, b, r, b, w, w, w]
 rat14 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, w, w]
 rat15 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, b, r, b, w]
 rat16 = [b, r, r, r, r, r, r, r, r, r, r, r, r, r, r, r, b, b, r, r, b]
-rat16 = [b, r, r, r, b, b, b, b, , r, r, r, r, r, r, r, r, r, r, r, b]
+rat17 = [b, r, r, r, b, b, b, b, b, b, b, r, r, r, r, r, r, r, r, r, b]
+rat18 = [b, r, r, b, re, re, re, re, re, re, re, r, r, r, r, r, r, r, r, r, b]
+rat19 = [b, r, r, b, re, re, re, re, re, re, re, r, r, r, r, r, r, r, r, r, b]
+rat20 = [b, rd, rd, rd, b, b, b, b, b, b, b, r, r, b, b, r, r, r, r, r, b]
+rat21 = [w, b, b, rd, rd, rd, rd, rd, r, r, r, r, r, b, b, r, r, r, r, r, b]
+rat22 = [w, w, w, b, b, b, b, rd, rd, rd, rd, rd, rd, rd, rd, rd, rd, rd, rd, b, w]
+rat23 = [w, w, w, w, w, w, w, b, b, b, b, b, b, b, b, b, b, b, b, w, w]
+ratall = [rat, rat1, rat2, rat3, rat4, rat5, rat6, rat7, rat8, rat9, rat10, rat11, rat12, rat13, rat14, rat15, rat16, rat17, rat18, rat19, rat20, rat21, rat22, rat23]
 
 import turtle
 t = turtle.Turtle()
@@ -1058,7 +1065,11 @@ if enemy1 == "championfly":
     t.forward(pixelsize)
   t.penup()
   turtle.update()'''
-  
+
+#rat printing code
+if enemy1 == "rat":
+  draw (-375, 200, 12.5, ratall)
+
   #fly printing code
 turtle.tracer(0,0)
 if enemy1 == "fly":
