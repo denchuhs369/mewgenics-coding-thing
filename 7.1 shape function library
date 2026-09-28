@@ -1,10 +1,28 @@
 import turtle
 t = turtle.Turtle()
 t.speed(0)
-def draw_shape(size, sides):
+def draw_shape(size, sides, color):
+  t.color(color)
+  t.pendown()
   for i in range (sides):
   	t.forward(size)
   	t.right(360 / sides)
-draw_shape(100, 8)
-draw_shape(30, 3)
-draw_shape (40, 10)
+  t.penup()
+#draw_shape(100, 8, "red")
+#draw_shape (30, 25, "green")
+#draw_shape(30, 3, "blue")
+def drawhouse():
+  draw_shape(100, 4, "red")
+  t.setheading(60)
+  draw_shape(100, 3, "green")
+  t.setheading(270)
+  t.forward(65)
+  t.setheading(0)
+  t.forward(32.5)
+  draw_shape(35, 4, "brown")
+  t.forward(35)
+  t.setheading(270)
+  t.forward(15)
+  draw_shape(3, 10, "orange")
+  t.hideturtle()
+drawhouse()
