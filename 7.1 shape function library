@@ -11,7 +11,12 @@ def draw_shape(size, sides, color):
 #draw_shape(100, 8, "red")
 #draw_shape (30, 25, "green")
 #draw_shape(30, 3, "blue")
-def drawhouse():
+def drawhouse(x, y):
+  t.penup()
+  t.goto(x, y)
+  t.pendown()
+  t.showturtle()
+  t.setheading(0)
   draw_shape(100, 4, "red")
   t.setheading(60)
   draw_shape(100, 3, "green")
@@ -25,4 +30,9 @@ def drawhouse():
   t.forward(15)
   draw_shape(3, 10, "orange")
   t.hideturtle()
-drawhouse()
+
+drawhouse(-250, 0)
+drawhouse(-130, 100)
+drawhouse(-50, 0)
+drawhouse(50, 0)
+drawhouse(150, 0)
