@@ -1,9 +1,21 @@
 import turtle
 t = turtle.Turtle()
 t.speed(0)
-def drawpizza(shape):
+def drawpizza(shape, topping):
   if shape == "square":
   	for i in range (4):
    	  t.forward(50)
    	  t.right(90)
-drawpizza("square")
+  if shape == "circle":
+  	for i in range (20):
+   	  t.forward(10)
+   	  t.right(18)
+  if topping == "bacon":
+    x = t.xcor()
+    y = t.ycor()
+    t.goto(x, y - 10)
+		for i in range (2):
+      pass
+    
+    
+drawpizza("circle", "bacon")
