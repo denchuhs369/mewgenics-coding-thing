@@ -73,7 +73,17 @@ def drawpizza(shape, topping):
         t.right(90)
         t.end_fill()
         pass
+def drawbread():
+  t.penup()
+  t.forward(150)
+  t.pendown()
+  for i in range (3):
+    t.right(90)
+    t.forward(50)
+  for i in range (18):
+    t.right(10)
+    t.forward(4.38835)
+  t.hideturtle()
 
-    
-    
 drawpizza("circle", "bacon")
+drawbread()
